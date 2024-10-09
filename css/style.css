@@ -5,6 +5,7 @@
   --footer-bg: black;
   --divder-c: rgb(209, 208, 208);
   --border-section-c: gray;
+  --text-gray: gray;
 }
 
 /* Reset globali */
@@ -61,12 +62,72 @@ hr {
   margin-bottom: 20px;
 }
 
+/* padding in em bottom */
 .pb-2 {
   padding-bottom: 2em;
 }
 
+.pb-15 {
+  padding-bottom: 1.5em;
+}
+
+.pb-1 {
+  padding-bottom: 1em;
+}
+
+.pb-05 {
+  padding-bottom: 0.5em;
+}
+
+/* padding in em right */
+.pr-2 {
+  padding-right: 2em;
+}
+
+.pr-15 {
+  padding-right: 1.5em;
+}
+
+.pr-1 {
+  padding-right: 1em;
+}
+
+.pr-05 {
+  padding-right: 0.5em;
+}
+
+/* padding in em left */
+.pl-2 {
+  padding-left: 2em;
+}
+
+.pl-15 {
+  padding-left: 1.5em;
+}
+
+.pl-1 {
+  padding-left: 1em;
+}
+
+.pl-05 {
+  padding-left: 0.5em;
+}
+
+/* padding in em top */
 .pt-2 {
   padding-top: 2em;
+}
+
+.pt-15 {
+  padding-top: 1.5em;
+}
+
+.pt-1 {
+  padding-top: 1em;
+}
+
+.pt-05 {
+  padding-top: 0.5em;
 }
 
 .btn {
@@ -76,6 +137,15 @@ hr {
 .btn.btn-blue {
   background-color: var(--button-bg);
   color: white;
+}
+
+.text-gray {
+  color: var(--text-gray);
+}
+
+.a-normal {
+  color: blue;
+  text-decoration: underline;
 }
 
 /* header */
@@ -142,6 +212,10 @@ header ul.flex.left-list {
 }
 
 /* First section */
+.first-section span {
+  display: inline-block;
+}
+
 .first-section .row {
   gap: 20px;
   justify-content: space-between;
@@ -153,20 +227,6 @@ header ul.flex.left-list {
 .first-section .col-head {
   text-align: center;
   border: 1px solid var(--border-section-c);
-}
-
-.first-section h1 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.first-section label {
-  padding-left: 5px;
-  padding-right: 10px;
-}
-
-.first-section .row {
-  padding-top: 20px;
 }
 
 /* Second section */
