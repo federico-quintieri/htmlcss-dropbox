@@ -6,6 +6,7 @@
   --divder-c: rgb(209, 208, 208);
   --border-section-c: gray;
   --text-gray: gray;
+  --text-green: green;
 }
 
 /* Reset globali */
@@ -132,6 +133,7 @@ hr {
 
 .btn {
   padding: 0.4em 1em 0.4em 1em;
+  text-align: center;
 }
 
 .btn.btn-blue {
@@ -143,9 +145,17 @@ hr {
   color: var(--text-gray);
 }
 
+.text-green {
+  color: var(--text-green);
+}
+
 .a-normal {
   color: blue;
   text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 /* header */
@@ -228,15 +238,21 @@ header ul.flex.left-list {
   text-align: center;
   border: 1px solid var(--border-section-c);
 }
+.first-section .col-card {
+  padding: 30px;
+}
+
+.first-section .price {
+  font-weight: bold;
+}
 
 /* Second section */
-.second-section .row {
-  /* debug */
-  min-height: 200px;
-  border: 1px solid black;
+.second-section .container {
+  border: 1px solid var(--border-section-c);
 }
+
 .second-section .col {
-  border: 1px solid black;
+  padding: 30px;
 }
 .second-section .col.col-1 {
   width: 70%;
@@ -246,7 +262,11 @@ header ul.flex.left-list {
 }
 .second-section .heading {
   text-align: center;
-  border: 1px solid black;
+  border-bottom: 1px solid var(--border-section-c);
+}
+
+.second-section span {
+  display: inline-block;
 }
 
 /* Third section */
