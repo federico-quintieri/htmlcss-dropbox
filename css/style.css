@@ -5,7 +5,7 @@
   --footer-bg: black;
   --divder-c: rgb(209, 208, 208);
   --border-section-c: gray;
-  --text-gray: gray;
+  --text-gray: rgb(187, 187, 187);
   --text-green: green;
 }
 
@@ -221,6 +221,11 @@ header ul.flex.left-list {
   display: inline-block;
 }
 
+.divider {
+  margin-top: 80px;
+  border: 1px solid rgb(238, 238, 238);
+}
+
 /* First section */
 .first-section span {
   display: inline-block;
@@ -292,27 +297,16 @@ header ul.flex.left-list {
   gap: 10px;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* debug */
-  min-height: 500px;
-  border: 1px solid black;
 }
 
 .fourth-section .col {
   width: calc((100% - 20px) / 3);
-  /* debug */
-  border: 1px solid black;
+  padding-bottom: 30px;
 }
 
 /* Fifth section */
-.fifth-section .row {
-  /* debug */
-  min-height: 300px;
-  border: 1px solid black;
-}
-
-.fifth-section .col {
-  /* debug */
-  border: 1px solid black;
+.fifth-section a {
+  display: inline-block;
 }
 
 .fifth-section .col.col-1 {
@@ -326,23 +320,29 @@ header ul.flex.left-list {
 footer {
   background-color: var(--footer-bg);
   color: white;
-  /* debug */
-  min-height: 400px;
+  padding: 50px 0 50px 0;
 }
 
 footer .row {
   justify-content: space-between;
   gap: 10px;
-  /* debug */
-  min-height: 200px;
 }
 
 footer .col {
   width: calc((100% - 10px) / 5);
-  /* debug */
-  border: 1px solid white;
 }
 
 footer hr {
   width: 15%;
+}
+
+footer a {
+  color: var(--text-gray);
+}
+footer li,
+footer h4 {
+  padding-bottom: 0.5em;
+}
+footer hr {
+  margin: 2em 0 2em 0;
 }
