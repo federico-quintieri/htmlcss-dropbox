@@ -205,12 +205,12 @@ header ul.flex.left-list {
 }
 
 .hero-section .col.p-30 {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .hero-section img {
   position: relative;
-  top: 50px;
+  top:60px;
 }
 
 .hero-section .arrow-down {
@@ -345,4 +345,21 @@ footer h4 {
 }
 footer hr {
   margin: 2em 0 2em 0;
+}
+footer {
+  margin-top: 50px;
+}
+
+/* Sections margins */
+.first-section {
+  margin-bottom: 50px;
+}
+.second-section {
+  margin-bottom: 130px;
+}
+.third-section {
+  margin-bottom: 20px;
+}
+.fourth-section {
+  margin-bottom: 80px;
 }
