@@ -2,6 +2,7 @@
 :root {
   --section-bg: rgb(59, 143, 192);
   --button-bg: blue;
+  --footer-bg: black;
 }
 
 /* Reset globali */
@@ -49,6 +50,11 @@ a {
 .flex {
   display: flex;
 }
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 
 /* header */
 header {
@@ -139,4 +145,65 @@ header .right-list li {
 }
 .third-section .col.col-2 {
   width: 40%;
+}
+
+/* Fourth section */
+
+.fourth-section .row {
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* debug */
+  min-height: 500px;
+  border: 1px solid black;
+}
+
+.fourth-section .col {
+  width: calc((100% - 20px) / 3);
+  /* debug */
+  border: 1px solid black;
+}
+
+/* Fifth section */
+.fifth-section .row {
+  /* debug */
+  min-height: 300px;
+  border: 1px solid black;
+}
+
+.fifth-section .col {
+  /* debug */
+  border: 1px solid black;
+}
+
+.fifth-section .col.col-1 {
+  width: 60%;
+}
+.fifth-section .col.col-2 {
+  width: 40%;
+}
+
+/* footer */
+footer {
+  background-color: var(--footer-bg);
+  color: white;
+  /* debug */
+  min-height: 400px;
+}
+
+footer .row {
+  justify-content: space-between;
+  gap: 10px;
+  /* debug */
+  min-height: 200px;
+}
+
+footer .col {
+  width: calc((100% - 10px) / 5);
+  /* debug */
+  border: 1px solid white;
+}
+
+footer hr {
+  width: 15%;
 }
