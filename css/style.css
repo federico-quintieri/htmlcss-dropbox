@@ -2,9 +2,9 @@
 :root {
   --section-bg: rgb(166, 220, 252);
   --button-bg: blue;
-  --footer-bg: black;
+  --footer-bg: rgb(27, 27, 27);
   --divder-c: rgb(209, 208, 208);
-  --border-section-c: gray;
+  --border-section-c: rgb(190, 190, 190);
   --text-gray: rgb(187, 187, 187);
   --text-green: green;
 }
@@ -227,6 +227,11 @@ header ul.flex.left-list {
 }
 
 /* First section */
+.first-section .col-card.flex{
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .first-section span {
   display: inline-block;
 }
