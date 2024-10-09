@@ -270,14 +270,12 @@ header ul.flex.left-list {
 }
 
 /* Third section */
-.third-section .row {
-  /* debug */
-  min-height: 300px;
-  border: 1px solid black;
+.third-section .col.col-2,
+.third-section .col.col-2 .btn {
+  text-align: left;
 }
 
-.third-section .col {
-  /* debug */
+.third-section .col.col-2 .btn {
   border: 1px solid black;
 }
 
