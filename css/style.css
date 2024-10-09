@@ -34,6 +34,10 @@ a {
   width: 80%;
 }
 
+.p-60 {
+  width: 60%;
+}
+
 .p-30 {
   width: 30%;
 }
@@ -79,4 +83,60 @@ header .right-list li {
 .hero-section .col {
   /* debug */
   border: 1px solid black;
+}
+
+/* First section */
+.first-section .row {
+  gap: 20px;
+  justify-content: space-between;
+  /* debug */
+  min-height: 500px;
+  border: 1px solid black;
+}
+.first-section .col {
+  width: 30%;
+  border: 1px solid black;
+}
+.first-section .col-head {
+  /* debug */
+  border: 1px solid black;
+}
+
+/* Second section */
+.second-section .row {
+  /* debug */
+  min-height: 200px;
+  border: 1px solid black;
+}
+.second-section .col {
+  border: 1px solid black;
+}
+.second-section .col.col-1 {
+  width: 70%;
+}
+.second-section .col.col-2 {
+  width: 30%;
+}
+.second-section .heading {
+  text-align: center;
+  border: 1px solid black;
+}
+
+/* Third section */
+.third-section .row {
+  /* debug */
+  min-height: 300px;
+  border: 1px solid black;
+}
+
+.third-section .col {
+  /* debug */
+  border: 1px solid black;
+}
+
+.third-section .col.col-1 {
+  width: 60%;
+}
+.third-section .col.col-2 {
+  width: 40%;
 }
