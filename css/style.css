@@ -1,7 +1,7 @@
 /* Variabili globali */
 :root {
-  --section-bg: rgb(166, 220, 252);
-  --button-bg: blue;
+  --section-bg: rgb(180 208 231);
+  --button-bg: rgb(0 97 255);
   --footer-bg: rgb(27, 27, 27);
   --divder-c: rgb(209, 208, 208);
   --border-section-c: rgb(190, 190, 190);
@@ -145,6 +145,7 @@ hr {
 
 .btn.btn-blue:hover {
   background-color: var(--btn-blu-hover);
+  cursor: pointer;
 }
 
 .text-gray {
@@ -331,6 +332,12 @@ header a:not(.btn) {
   width: 40%;
 }
 
+.third-section .col.col-2 a:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
 /* Fourth section */
 
 .fourth-section .row {
@@ -402,4 +409,63 @@ footer {
 }
 .fourth-section {
   margin-bottom: 80px;
+}
+
+/* sixth section : overflow */
+
+.sixth-section .row.flex {
+  height: 500px;
+}
+
+.sixth-section .overflow-div {
+  font-size: 1.2em;
+  height: 100%; /* Modifica secondo necessità */
+  overflow: auto; /* Attiva lo scroll */
+}
+
+/* Impostiamo la width di ogni card 4 */
+.sixth-section .col.flex {
+  flex-wrap: wrap;
+}
+
+.sixth-section .col.flex .card {
+  width: calc((100% / 2));
+  height: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 2em;
+}
+
+.sixth-section .col {
+  width: calc(100% / 3);
+}
+
+.sixth-section .col.flex:nth-child(1) .card:nth-child(1) {
+  background-color: rgb(162 211 155);
+  border: 10px solid rgb(209 233 205);
+}
+
+.sixth-section .col.flex:nth-child(1) .card:nth-child(2) {
+  background-color: rgb(97 8 43);
+}
+.sixth-section .col.flex:nth-child(1) .card:nth-child(3) {
+  background-color: rgb(0 147 206);
+}
+.sixth-section .col.flex:nth-child(1) .card:nth-child(4) {
+  background-color: rgb(255 28 28);
+}
+
+.sixth-section .col.flex:nth-child(3) .card:nth-child(1) {
+  background-color: rgb(213 0 31);
+}
+
+.sixth-section .col.flex:nth-child(3) .card:nth-child(2) {
+  background-color: rgb(180 208 231);
+}
+.sixth-section .col.flex:nth-child(3) .card:nth-child(3) {
+  background-color: rgb(13 36 129);
+}
+.sixth-section .col.flex:nth-child(3) .card:nth-child(4) {
+  background-color: rgb(255 216 48);
 }
