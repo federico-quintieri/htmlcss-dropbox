@@ -7,6 +7,8 @@
   --border-section-c: rgb(190, 190, 190);
   --text-gray: rgb(187, 187, 187);
   --text-green: green;
+  --btn-blu-hover: rgb(93, 93, 250);
+  --a-color-hover: rgb(39, 39, 179);
 }
 
 /* Reset globali */
@@ -141,6 +143,10 @@ hr {
   color: white;
 }
 
+.btn.btn-blue:hover {
+  background-color: var(--btn-blu-hover);
+}
+
 .text-gray {
   color: var(--text-gray);
 }
@@ -154,11 +160,26 @@ hr {
   text-decoration: underline;
 }
 
+.a-normal:hover {
+  color: var(--a-color-hoverf);
+}
+
 .bold {
   font-weight: bold;
 }
 
 /* header */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
 header nav {
   height: 100%;
   justify-content: space-between;
@@ -187,6 +208,13 @@ header img {
 header ul.flex {
   align-items: center;
 }
+header ul li a {
+  line-height: 70px;
+}
+
+header ul li a:not(.btn):hover {
+  border-bottom: 2px solid black;
+}
 
 header ul.flex.right-list {
   justify-content: right;
@@ -195,9 +223,16 @@ header ul.flex.right-list {
 header ul.flex.left-list {
   justify-content: left;
 }
+
+header a:not(.btn) {
+  display: inline-block;
+  height: 70px;
+}
+
 /* Hero section */
 .hero-section {
   background-color: var(--section-bg);
+  padding-top: 100px;
 }
 
 .hero-section h1 {
@@ -249,7 +284,7 @@ header ul.flex.left-list {
   border: 1px solid var(--border-section-c);
 }
 .first-section .col-card {
-  padding:20px;
+  padding: 20px;
 }
 
 .first-section .price {
