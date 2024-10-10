@@ -210,7 +210,7 @@ header ul.flex.left-list {
 
 .hero-section img {
   position: relative;
-  top:60px;
+  top: 60px;
 }
 
 .hero-section .arrow-down {
@@ -227,7 +227,7 @@ header ul.flex.left-list {
 }
 
 /* First section */
-.first-section .col-card.flex{
+.first-section .col-card.flex {
   flex-direction: column;
   justify-content: space-between;
 }
@@ -249,7 +249,7 @@ header ul.flex.left-list {
   border: 1px solid var(--border-section-c);
 }
 .first-section .col-card {
-  padding: 30px;
+  padding:20px;
 }
 
 .first-section .price {
