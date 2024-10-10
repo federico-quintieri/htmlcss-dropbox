@@ -475,18 +475,63 @@ footer {
   background-color: var(--section-bg);
 }
 
-.seven-section .row{
-  gap:50px;
-  justify-content:space-between
+.seven-section .row {
+  gap: 50px;
+  justify-content: space-between;
 }
 
-.seven-section .btn{
+.seven-section .btn {
   background-color: white;
 }
-.seven-section h2{
+
+.seven-section .btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.seven-section h2 {
   font-size: 1.6em;
   color: rgb(84, 46, 119);
 }
 .seven-section {
-  padding:80px 0 80px 0;
+  padding: 80px 0 80px 0;
+}
+
+/* Eight section : FAQ */
+
+.eight-section .row.flex {
+  flex-direction: column;
+}
+
+.eight-section h2 {
+  font-size: 1.8em;
+}
+
+.eight-section .div-question p {
+  display: none;
+}
+
+.eight-section .div-question .arrow-up {
+  display: none;
+}
+
+.eight-section .div-question:hover {
+  cursor: pointer;
+}
+
+.eight-section .div-question:hover .arrow-up {
+  display: inline;
+}
+
+.eight-section .div-question:hover .arrow-down {
+  display: none;
+}
+
+.eight-section .div-question:hover p {
+  display: inline-block;
+}
+.eight-section .div-question .flex {
+  justify-content: space-between;
+  align-items: center;
 }
